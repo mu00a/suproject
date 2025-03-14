@@ -1,0 +1,72 @@
+name: suproject  # Keeping your original project name
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1  # Keeping your SDK version
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  pdf: ^3.10.8
+  path_provider: ^2.1.1
+  share_plus: ^7.2.2
+  flutter_pdfview: ^1.3.1
+  screenshot: ^2.1.0
+  image: ^4.1.7
+  permission_handler: ^11.3.0
+  open_file: ^3.3.2
+  image_picker: ^1.0.7
+  flutter_image_compress: ^2.1.0
+  logger: ^2.0.0
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0  # Keeping your version
+  flutter_native_splash: ^2.3.10  # Added for splash screen
+  flutter_launcher_icons: ^0.13.1  # Added for launcher icons
+
+flutter:
+  uses-material-design: true
+
+  # Added assets section
+  assets:
+    - assets/
+    - assets/fonts/
+    - assets/image/templateframe.png
+    - assets/image/templateframe1.png
+    - assets/image/templateframe2.png
+    - assets/image/templateframe3.png
+    - assets/image/templateframe4.png
+    - assets/image/templateframe5.png
+    - assets/image/templateframe6.png
+    - assets/image/templateframe7.png
+    - assets/image/templateframe8.png
+    - assets/logo.png
+
+  # Added fonts section
+  fonts:
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/amiri.ttf
+
+# Added splash screen configuration
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/logo.png
+  android: true
+  ios: true
+  fullscreen: true
+
+# Added launcher icons configuration
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/logo.png"
